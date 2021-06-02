@@ -5,13 +5,13 @@ public class Main {
     public static void main(String[] args) {
         Context context = new Context();
 
-        StartState startState = new StartState();
-        startState.doState(context);
+        BeginState beginState = new BeginState();
+        beginState.doState(context);
 
         System.out.println(context.getState().toString());
 
-        StopState stopState = new StopState();
-        stopState.doState(context);
+        EndState endState = new EndState();
+        endState.doState(context);
 
         System.out.println(context.getState().toString());
 

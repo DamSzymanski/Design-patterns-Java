@@ -1,13 +1,12 @@
 package com.company;
 
-public class StartState implements State{
-
+public class EndState implements State{
     public void doState(Context context) {
-        System.out.println("Rozpoczęcie stanu");
+        System.out.println("Stan jest zatrzymywany");
         context.setState(this);
     }
 
     public String toString(){
-        return "Stan rozpoczęty";
+        return "Stan zatrzymany";
     }
 }
